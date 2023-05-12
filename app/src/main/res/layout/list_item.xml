@@ -23,7 +23,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:text="Title"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:padding="8dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="@string/title"
                 android:textColor="@color/black"
                 android:textSize="18sp"/>
 
@@ -34,7 +39,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:text="Note"
+            android:text="@string/note"
+            android:maxLines="10"
+            android:padding="8dp"
+            android:textStyle="normal"
             android:textColor="@color/black"
             android:textSize="14sp"/>
 
@@ -42,10 +50,15 @@
             android:id="@+id/tv_date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:text="Date"
-            android:textColor="@color/black"
-            android:textSize="14sp"/>
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxLines="10"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:text="@string/date"
+            android:textColor="#757575"
+            android:textSize="14sp"
+            android:textStyle="normal" />
 
     </LinearLayout>
 
